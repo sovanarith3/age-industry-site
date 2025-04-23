@@ -26,18 +26,26 @@
     .container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
       padding: 40px 20px;
     }
-    img {
-      max-width: 200px;
-      margin-bottom: 20px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
     }
-    h1 {
-      font-size: 3rem;
+    .logo {
+      max-width: 120px;
+    }
+    .title {
+      font-size: 2.5rem;
       font-weight: bold;
+      margin-left: auto;
+      text-align: right;
     }
     .about, .projects, form {
       max-width: 800px;
@@ -83,11 +91,9 @@
       font-size: 1rem;
     }
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      .about {
-        font-size: 1rem;
+      .title {
+        font-size: 1.5rem;
+        text-align: center;
       }
     }
   </style>
@@ -100,8 +106,10 @@
     <a href="#contact">Contact</a>
   </nav>
   <div class="container" id="home">
-    <img src="ageindustry.png" alt="Age Industry Logo">
-    <h1>Welcome to Age Industry</h1>
+    <div class="header">
+      <img src="ageindustry.png" alt="Age Industry Logo" class="logo">
+      <div class="title">Welcome to Age Industry</div>
+    </div>
     <div class="about" id="about">
       Age Industry is a visionary platform at the frontier of technology, focused on shaping the future through field-based innovation, quantum communication, and intelligent energy systems.
     </div>
@@ -129,4 +137,4 @@
   </div>
 </body>
 </html>
-   
+
