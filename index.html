@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Age Industry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
       text-align: center;
+      padding: 40px 20px;
     }
     img {
       max-width: 200px;
@@ -24,11 +37,96 @@
     }
     h1 {
       font-size: 3rem;
+      font-weight: bold;
+    }
+    .about, .projects, form {
+      max-width: 800px;
+      width: 100%;
+      margin-top: 30px;
+    }
+    .about {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .projects h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .project-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 15px 0;
+      text-align: left;
+    }
+    .project-card h3 {
+      font-weight: bold;
+    }
+    .project-card p {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    button {
+      padding: 10px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input, textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .about {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="ageindustry.png" alt="Age Industry Logo" />
-  <h1>Welcome to Age Industry</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container" id="home">
+    <img src="ageindustry.png" alt="Age Industry Logo">
+    <h1>Welcome to Age Industry</h1>
+    <div class="about" id="about">
+      Age Industry is a visionary platform at the frontier of technology, focused on shaping the future through field-based innovation, quantum communication, and intelligent energy systems.
+    </div>
+    <div class="projects" id="projects">
+      <h2>Our Projects</h2>
+      <div class="project-card">
+        <h3>LEMON: The Age Field Crystal Core</h3>
+        <p>A nonlinear crystal device that demonstrates scalar age field effects for computing, healing, and field-powered light emission.</p>
+      </div>
+      <div class="project-card">
+        <h3>Enigma QKD</h3>
+        <p>Age-stabilized quantum key distribution using LiNbO₃ and BBO crystals. Real-world quantum-secure communication platform.</p>
+      </div>
+      <div class="project-card">
+        <h3>Raven Engine</h3>
+        <p>A vector age field propulsion unit designed to enable rapid interplanetary movement using field divergence and resonance thrust.</p>
+      </div>
+    </div>
+    <form name="contact" method="POST" data-netlify="true" id="contact">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </body>
 </html>
+   
