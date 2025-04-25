@@ -1,98 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AGE INDUSTRY</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Age Industry</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #003300;
-      color: white;
-    }
-
-    .container {
-      display: flex;
-      height: 100vh;
-    }
-
-    .sidebar {
-      background-color: #012d01;
-      padding: 30px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100px;
-      gap: 20px;
-    }
-
-    .sidebar img {
-      width: 60px;
-      border-radius: 50%;
-    }
-
-    .sidebar a {
-      text-decoration: none;
-      color: white;
-      font-size: 24px;
-      transition: transform 0.3s;
-    }
-
-    .sidebar a:hover {
-      transform: scale(1.2);
-    }
-
-    .main-content {
-      flex: 1;
-      background-image: url('ageindustryfinalphphoto.png');
+      padding: 0;
+      background-image: url('biochip.png'); /* THIS IS THE BACKGROUND */
       background-size: cover;
       background-position: center;
-      padding: 60px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: white;
     }
 
-    .main-content h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+    .contact-container {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 50px;
+      max-width: 700px;
+      margin: 80px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+
+    h1 {
       color: #ffff66;
+      margin-bottom: 20px;
     }
 
-    .main-content p {
-      font-size: 18px;
-      max-width: 600px;
-      line-height: 1.6;
+    a {
+      color: #00ffcc;
+      text-decoration: none;
     }
 
-    .icon {
-      width: 24px;
-      height: 24px;
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .back {
+      margin-top: 40px;
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 6px;
+      color: #ffff66;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <!-- Sidebar with Icons -->
-    <div class="sidebar">
-      <!-- Home -->
-      <a href="index.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/home.png" alt="Home" class="icon"></a>
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>Email: <a href="mailto:ceo@ageindustry.ca">ceo@ageindustry.ca</a></p>
+    <p>Phone: +1 (555) 123-4567</p>
+    <p>Location: Toronto, Ontario, Canada</p>
 
-      <!-- Lemon Biochip -->
-      <a href="lemon-biochip.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/test-tube.png" alt="Lemon Biochip" class="icon"></a>
-
-      <!-- Contact -->
-      <a href="contact.html"><img src="https://img.icons8.com/ios-filled/50/ffffff/at-sign.png" alt="Contact" class="icon"></a>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-      <h1>AGE INDUSTRY</h1>
-      <p>We build future-facing tech inspired by nature and powered by real science.</p>
-      <p>From quantum-secure communication to graphene biochips, Age Industry is rethinking health, energy, and intelligence.</p>
-    </div>
+    <a class="back" href="index.html">← Back to Home</a>
   </div>
 
 </body>
