@@ -11,7 +11,12 @@
         nav a { color: white; padding: 14px 16px; text-decoration: none; display: inline-block; }
         nav a:hover { background-color: #ddd; color: black; }
         .content { padding: 20px; max-width: 800px; margin: auto; }
+        .biochip-section { background-color: #e0e0e0; padding: 15px; border-radius: 5px; margin-top: 20px; }
         footer { background-color: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        @media (max-width: 600px) {
+            nav a { padding: 10px; }
+            .content { padding: 10px; }
+        }
     </style>
 </head>
 <body>
@@ -28,9 +33,13 @@
         <h2>Welcome to Lemon Biochip</h2>
         <p>Discover our cutting-edge biochip technology designed to detect crop diseases and enhance soil management with 90-97.5% accuracy. Perfect for Ontario farmers and beyond!</p>
         <p>Stay tuned for updates on our research and development progress.</p>
+        <div class="biochip-section">
+            <h3>Lemon Biochip Overview</h3>
+            <p>Our biochip offers real-time monitoring and data analysis to improve crop yield and sustainability. Learn more about its features and how it can transform your farming practices.</p>
+        </div>
     </div>
     <footer>
-        <p>&copy; 2025 Lemon Biochip. All rights reserved.</p>
+        <p>© 2025 Lemon Biochip. All rights reserved.</p>
     </footer>
     <script>
         // Simple navigation highlight
